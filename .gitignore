@@ -1,0 +1,44 @@
+# Ignore everything that is a game artifact, a key or a build product.
+# This repository holds only the written record and the two helper scripts.
+
+# game files and keys — never commit these
+*.nsp
+*.xci
+*.nsz
+*.xcz
+*.nup
+*.keys
+prod.keys
+title.keys
+
+# build products
+*.ipa
+*.img
+*.img.part
+*.metallib
+*.air
+*.metal
+*.spv
+*.patched.bin
+*.bin
+
+# build folders
+*_build/
+extract/
+patched_*/
+shader/
+profile/
+logs/
+tmp/
+ipa/
+
+# local scratch
+_upload.py
+verify.ipa
+*.log
+
+# editor / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
